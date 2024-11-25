@@ -22,10 +22,9 @@ class _OnboardingScreen3State extends State<OnboardingScreen3> {
 
             Positioned(
               top: 80.h,
-              left: -4.w,
               child: Container(
                 height: 389.h,
-                width: 370.w,
+                width: 372.w,
                 child: Image.asset(
                   AppImages.person,
                 ),
@@ -127,19 +126,12 @@ class _OnboardingScreen3State extends State<OnboardingScreen3> {
               ),
             ),
             Positioned(
-              top: 670.h,
-              left: 241.w,
-              child: CustomPaint(
-                size: Size(190.w, 180.h),
-                painter: CurvedRectanglePainter(),
-              ),
-            ),
-            Positioned(
-              top: 671.h,
-              left: 273.w,
-              child: CustomPaint(
-                size: Size(140.w, 150.h),
-                painter: ArcPainter(),
+              top: 630.h,
+              left: 237.w,
+              child: Container(
+                height: 200.h,
+                width: 180.w,
+                child: Image.asset(AppImages.rectangle),
               ),
             ),
             Positioned(

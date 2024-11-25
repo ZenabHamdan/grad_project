@@ -160,7 +160,12 @@ class _LoginPageState extends State<LoginPage> {
                           Text("Not Register Yet? ",
                               style: AppTextStyles.sign_in_description),
                           GestureDetector(
-                              onTap: widget.onTap,
+                              onTap:
+                                  (){ Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => SignupScreen(onTap: (){})
+                                  ));},
+                              // widget.onTap,
                               child: Text(
                                 "Sign Up",
                                 style: AppTextStyles.sign_in_description

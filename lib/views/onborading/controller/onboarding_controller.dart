@@ -37,7 +37,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
   void _navigateToLoginOrRegisterPage() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => LoginOrRegister()),
+      MaterialPageRoute(builder: (context) =>
+          LoginPage(onTap: (){})),
     );
   }
 
@@ -85,12 +86,6 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ),
         ],
       ),
-      // floatingActionButton: _currentPage == 3
-      //     ? FloatingActionButton(
-      //   onPressed: _completeOnboarding,
-      //   child: Icon(Icons.check),
-      // )
-      //     : null,
     );
   }
 }

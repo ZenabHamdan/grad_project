@@ -107,25 +107,17 @@ class _OnboardingScreen2State extends State<OnboardingScreen2> {
               ),
             ),
             Positioned(
-              top: 670.h,
-              left: 241.w,
-              child: CustomPaint(
-                size: Size(190.w, 180.h),
-                painter: CurvedRectanglePainter(),
+              top: 630.h,
+              left: 237.w,
+              child: Container(
+                height: 200.h,
+                width: 180.w,
+                child: Image.asset(AppImages.rectangle),
               ),
             ),
-            Positioned(
-              top: 671.h,
-              left: 273.w,
-              child: CustomPaint(
-                size: Size(140.w, 150.h),
-                painter: ArcPainter(),
-              ),
-            ),
-
             Positioned(
               top: 746.h,
-              left: 325.w,
+              left: 330.w,
               child: GestureDetector(
                 onTap:widget.onNext,
                 child: SvgPicture.asset(AppImages.arrowRightIcon),

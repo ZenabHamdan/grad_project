@@ -19,8 +19,6 @@ export 'package:grad_project/widgets/indicator.dart';
 export 'package:grad_project/views/signin/view/signin_screen.dart';
 export 'package:grad_project/views/signup/signup_screen.dart';
 export 'package:shared_preferences/shared_preferences.dart';
-export 'package:grad_project/views/signin/controller/login_or_register.dart';
-export 'package:grad_project/widgets/curved_rectangle.dart';
 export 'package:grad_project/views/onborading/controller/onboarding_controller.dart';
 export 'package:grad_project/widgets/custom_circle.dart';
 export 'package:grad_project/core/classses/validator.dart';

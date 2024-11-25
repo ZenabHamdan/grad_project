@@ -35,7 +35,7 @@ class AppImages {
   static String box_3 = '$rootImage/box4.png';
   static String box_4 = '$rootImage/box5.png';
   static String person_one = '$rootImage/person_one.png';
-
+  static String rectangle = '$rootImage/Rectangle.png';
 
 
   //Icons

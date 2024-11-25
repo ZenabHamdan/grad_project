@@ -13,9 +13,7 @@ class _SignupScreenState extends State<SignupScreen> {
   final TextEditingController _pwController = TextEditingController();
   final TextEditingController _userNameController = TextEditingController();
 
-
   final _formKey = GlobalKey<FormState>();
-
   bool isloading = false;
 
   Future<void> login(BuildContext context) async {
@@ -163,7 +161,12 @@ class _SignupScreenState extends State<SignupScreen> {
                           Text("Have an Account? ",
                               style: AppTextStyles.sign_in_description),
                           GestureDetector(
-                              onTap: widget.onTap,
+                              onTap:
+                                  (){ Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => LoginPage(onTap: (){})
+                                  ));},
+                              // widget.onTap,
                               child: Text(
                                 "Sign In",
                                 style: AppTextStyles.sign_in_description
