@@ -27,12 +27,13 @@ class CustomCard extends StatelessWidget {
     return Container(
       width: 260.w,
       height: 150.h,
-      padding: const EdgeInsets.all(16.0),
-      decoration: BoxDecoration(
-        color: cardColor,
-        border: Border.all(color: const Color(0xffEDF4FF)),
-        borderRadius: BorderRadius.circular(16),
-      ),
+      padding:  EdgeInsets.symmetric(horizontal:  14.0.w, vertical: 14.0.h),
+        decoration: BoxDecoration(
+          image: DecorationImage(image: AssetImage(AppImages.vector),),
+          color: cardColor,
+          border: Border.all(color: const Color(0xffEDF4FF)),
+          borderRadius: BorderRadius.circular(16),
+        ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

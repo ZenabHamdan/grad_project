@@ -14,16 +14,13 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
   final List<Widget> screens = const [
     HomeScreen(),
     ProjectScreen(),
-    ChatScreen(),
+    MessengerScreen(),
     ProfileScreen(),
   ];
 
   void onItemTapped(int index) {
     if (index == 2) {
-      showModalBottomSheet(
-        context: context,
-        builder: (context) => const AddBottomSheet(),
-      );
+       AddBottomSheet().showCustomBottomSheet(context);
     } else {
       setState(() {
         currentIndex = (index > 2) ? index - 1 : index;
@@ -59,8 +56,8 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           ),
           BottomNavigationBarItem(
             icon: Container(
-                width: 50,
-                height: 50,
+                width: 50.w,
+                height: 50.h,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: AppColors.primaryColor,
@@ -71,7 +68,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                     AppImages.addIcon,
                     fit: BoxFit.contain,
                   ),
-                )),
+                ),),
             label: '',
           ),
           BottomNavigationBarItem(

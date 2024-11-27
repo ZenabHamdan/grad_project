@@ -3,24 +3,35 @@ class AppImages {
   static String rootImage = 'assets/images';
   static String logoImage = '$rootImage/logo.svg';
   static String circles = '$rootImage/circles_1.svg';
-  static String image1 = '$rootImage/Image_1.svg';
-  static String image2 = '$rootImage/Image_2.svg';
-  static String image3 = '$rootImage/Image_3.svg';
   static String circles_2 = '$rootImage/circles.svg';
   static String imageBox1 = '$rootImage/Image box 2.svg';
   static String imageBox2 = '$rootImage/Image box 3.svg';
   static String onBoardImage1 = '$rootImage/onboard4_img.svg';
   static String onBoardImage2 = '$rootImage/onboard5_img.svg';
-  static String onBoardImg1 = '$rootImage/Image 2.svg';
-  static String onBoardImg2 = '$rootImage/Image 3.svg';
   static String personImg1 = '$rootImage/Ellipse.png';
   static String personImg2 = '$rootImage/Ellipse_1.png';
   static String personImg3 = '$rootImage/Ellipse_2.png';
-  static String personImg4 = '$rootImage/img_4.svg';
+  static String personImg4 = '$rootImage/Ellipse_3.png';
   static String personImg5 = '$rootImage/img_5.svg';
-  static String profileImage = '$rootImage/profile_img.svg';
+  static String profileImage = '$rootImage/Prolile.png';
   static String logoXImage = '$rootImage/X_logo.svg';
   static String profileCircles = '$rootImage/profile_circles.svg';
+  static String vector = '$rootImage/Vector.png';
+  static String ava1 = '$rootImage/ava_1.png';
+  static String ava2 = '$rootImage/ava_2.png';
+  static String ava3 = '$rootImage/ava_3.png';
+  static String ava4 = '$rootImage/ava_4.png';
+  static String ava5 = '$rootImage/ava_5.png';
+  static String person = '$rootImage/person.png';
+  static String person_2 = '$rootImage/person2.png';
+  static String box_1 = '$rootImage/Image box 2.png';
+  static String box_2 = '$rootImage/Image box 3.png';
+  static String box_3 = '$rootImage/box4.png';
+  static String box_4 = '$rootImage/box5.png';
+  static String image1 = '$rootImage/Image 1.png';
+  static String image2 = '$rootImage/Image 2.png';
+  static String image3 = '$rootImage/Image 3.png';
+  static String rectangle = '$rootImage/Rectangle.png';
 
   //Icons
   static String rootIcon = 'assets/icons';
@@ -51,4 +62,7 @@ class AppImages {
   static String filledChatIcon = '$rootIcon/filled_chat.svg';
   static String filledProfileIcon = '$rootIcon/filled_profile.svg';
   static String totalCompleteIcon = '$rootIcon/total_complete_icon.svg';
+  static String arrowLeftIcon = '$rootIcon/arrow_left.svg';
+  static String searchIcon = '$rootIcon/Search.svg';
+  static String arrowIcon = '$rootIcon/Arrow - Left 2.svg';
 }

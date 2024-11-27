@@ -1,11 +1,28 @@
 import 'package:grad_project/exports/exports.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  bool isFirstLaunch = await checkIfFirstLaunch();
+  runApp(MyApp(appRouter: AppRouter(), isFirstLaunch: isFirstLaunch));
+}
+
+Future<bool> checkIfFirstLaunch() async {
+  String? installed = await SharedPreferencesService.getInstalled();
+
+  if (installed == null || installed == 'false') {
+    await SharedPreferencesService.setInstalled(installed: 'true');
+    return true;
+  }
+
+  return false;
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final AppRouter appRouter;
+  final bool isFirstLaunch;
+
+  const MyApp(
+      {super.key, required this.appRouter, required this.isFirstLaunch});
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -13,14 +30,15 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       builder: (context, child) {
         return MaterialApp(
-          title: 'Graduation Project',
+          title: 'Tasky',
           debugShowCheckedModeBanner: false,
           color: AppColors.backgroundColor,
+          initialRoute: isFirstLaunch ? Routes.onboardingFirst : Routes.signIn,
+          onGenerateRoute: appRouter.generateRoute,
           theme: ThemeData(
             fontFamily: 'Poppins',
             useMaterial3: true,
           ),
-          home: const CustomBottomNavigationBar(),
         );
       },
     );
